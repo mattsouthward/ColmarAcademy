@@ -1,15 +1,100 @@
+/* Fonts */
+/* latin-ext */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Catamaran Light'), local('Catamaran-Light'), url(https://fonts.gstatic.com/s/catamaran/v2/Aaag4ccR7Oh_4eai-jbrYIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Catamaran Light'), local('Catamaran-Light'), url(https://fonts.gstatic.com/s/catamaran/v2/Aaag4ccR7Oh_4eai-jbrYBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Catamaran'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v2/t_-OVtQ5f4U5rdYNmrStg4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Catamaran'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v2/iVYgK2bOLvZcSxr0ITOecpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Catamaran Bold'), local('Catamaran-Bold'), url(https://fonts.gstatic.com/s/catamaran/v2/PpgVtUHUdnBZYNpnzGbSc4joYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Catamaran Bold'), local('Catamaran-Bold'), url(https://fonts.gstatic.com/s/catamaran/v2/PpgVtUHUdnBZYNpnzGbScxampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Catamaran ExtraBold'), local('Catamaran-ExtraBold'), url(https://fonts.gstatic.com/s/catamaran/v2/6VjB_uSfn3DZ93IQv58CmIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Catamaran ExtraBold'), local('Catamaran-ExtraBold'), url(https://fonts.gstatic.com/s/catamaran/v2/6VjB_uSfn3DZ93IQv58CmBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Catamaran Black'), local('Catamaran-Black'), url(https://fonts.gstatic.com/s/catamaran/v2/5ys9TqpQc9Q6gHqbSox6p4joYw3YTyktCCer_ilOlhE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Catamaran';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Catamaran Black'), local('Catamaran-Black'), url(https://fonts.gstatic.com/s/catamaran/v2/5ys9TqpQc9Q6gHqbSox6pxampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+
 /* Universal styles */
 html {
   font-size: 16px;
 }
 body {
-  font-family: "Helvetica";
+  font-family: "Catamaran";
 }
-
+.section-container {
+  padding: 3rem 2rem;
+}
 /* Header section */
 header {
-  max-height: 4rem;
-  padding: 0.5rem 1.5rem;
+  height: 4rem;
+  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -17,14 +102,18 @@ header {
 header .logo {
   display: flex;
   align-items: center;
+  font-size: 1.5rem;
+}
+.logo img {
+  height: 80%;
 }
 .logo h3 {
-  color: #363636;
-  font-weight: bold;
+  color: #505050;
+  font-weight: 900;
 }
 .logo span {
-  color: #959595;
-  font-weight: normal;
+  color: #AFAFAF;
+  font-weight: 400;
 }
 header nav {
   color:
@@ -37,19 +126,39 @@ header ul li:not(:last-child) {
 }
 header a {
   text-decoration: none;
-  color: #454545;
+  color: #505050;
 }
+
+/* Top banner section */
 .banner {
-  background-color: #959595;
+  background-color: #cccccc;
   display: flex;
-  padding: 2rem 1.5rem;
 }
 .banner img {
   max-width: 60%;
-  height: auto;
-  margin-right: 2.5rem;
+  margin-right: 4rem;
 }
 .headline {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+  padding: 12rem 0;
+  color: #444;
+  max-width: 30%;
+}
+.headline h1 {
+  font-size: 3rem;
+  font-weight: 900;
+}
+.headline h4 {
+  font-size: 2rem;
+}
+.button a {
+  display: block;
+  background-color: #444;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  color: #FDFDFD;
 }
