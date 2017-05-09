@@ -273,7 +273,9 @@ p.credit {
   border: 2px groove #DDD;
 }
 .info-item-text {
-  padding: 1.5rem 1.5rem 1.5rem 0;
+  padding: 1.5rem 0;
+  max-width: 55%;
+  height: auto;
 }
 .info-item:first-child .info-item-img {
   padding-top: 0;
