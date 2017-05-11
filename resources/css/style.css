@@ -3,6 +3,22 @@
 @font-face {
   font-family: 'Roboto';
   font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
   font-weight: 500;
   src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
@@ -129,31 +145,70 @@
 }
 
 
-/* Universal styles */
+/*==========================================================*/
+/*==================== Universal section ===================*/
+/*==========================================================*/
 html {
   font-size: 16px;
 }
 body {
   font-family: "Catamaran";
 }
+main {
+  width: 1178px;
+  margin: auto;
+}
 h1 {
   font-size: 3rem;
   font-weight: 900;
   margin-bottom: 1.5rem;
-  color: #444;
+  color: #4A4A4A;
 }
 h4 {
   font-size: 2rem;
   margin-bottom: 2rem;
-  color: #444;
+  color: #4A4A4A;
 }
-/* Header section */
+img {
+  border-radius: 5px;
+  max-width: 100%;
+}
+p {
+  color: #777;
+  font-weight: 100;
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}
+section {
+  padding: 2rem 0;
+  max-width: 100%;
+  display: flex;
+  margin: auto;
+}
+.light-background {
+  background-color: #F3F5F5;
+}
+.flex-col-media {
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+.round-corners {
+  border-radius: 5px;
+}
+
+
+/*==========================================================*/
+/*===================== Header section =====================*/
+/*==========================================================*/
 header {
+  max-width: 100%;
   height: 4rem;
-  padding: 0 1.5rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: auto;
+  padding: 0 1.5rem;
 }
 header .logo {
   display: flex;
@@ -171,9 +226,6 @@ header .logo {
   color: #ddd;
   font-weight: 400;
 }
-header nav {
-  color:
-}
 header ul li {
   display: inline;
 }
@@ -184,18 +236,17 @@ header a {
   text-decoration: none;
   color: #505050;
 }
-img {
-  border-radius: 5px;
+
+
+/*==========================================================*/
+/*=================== Top banner section ===================*/
+/*==========================================================*/
+#banner {
+  background-color: #D8D8D8;
+  padding: 0;
 }
-.round-corners {
-  border-radius: 5px;
-}
-/* Top banner section */
-.banner {
-  background-color: #ddd;
-  display: flex;
-  align-items: center;
-  padding: 2rem 1.5rem;
+#banner .flex-col-media {
+  margin: 2rem 2.5rem 2rem 1.5rem;
 }
 .banner-img {
   max-width: 60%;
@@ -203,64 +254,61 @@ img {
   margin-right: 2.5rem;
 }
 .banner-img img {
-  width: 100%;
+  max-width: 100%;
   height: auto;
 }
 .headline {
+  max-width: 30%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  max-width: 30%;
-  height: auto;
+  justify-content: center;
+  margin: 2rem 1.5rem 2rem 0;
 }
 .button a {
   display: block;
-  background-color: #444;
+  background-color: #4A4A4A;
   padding: 1.5rem;
   font-size: 1.5rem;
   text-align: center;
   text-decoration: none;
   color: #FDFDFD;
 }
-
-/* Info section */
-.info {
-  background-color: #FAFAFA;
-  display: flex;
-  /*align-items: center;*/
+.button a:hover {
+  background-color: #000;
 }
-.info-left {
-  max-width: 60%;
-  height: auto;
+
+
+/*==========================================================*/
+/*====================== Info section ======================*/
+/*==========================================================*/
+#info {
+  padding: 0;
+}
+#info .flex-col-media {
   padding: 2rem 1.5rem;
   border-right: 2px solid #DDD;
 }
-#info-figure {
-  padding-right: 1.75rem;
+#info h1 {
+  margin-top: 2rem;
 }
-#info-figure img {
-  width: 100%;
-  height: auto;
-  margin-bottom: 2rem;
-}
-.info p {
-  color: #444;
+/*#info p {
+  color: #777;
   font-weight: 100;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 2rem;
-}
-p.credit {
+  font-size: 1.25rem;
+  line-height: 1.65rem;
+}*/
+#info #credit {
   color: #333;
   font-family: "Roboto";
-  font-size: 1.25rem;
+  font-size: 0.99rem;
+  margin-bottom: 0;
+  margin-top: 1rem;
 }
 .info-right {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 2rem 0;
-  max-width: 40%;
+  width: 423px;
 }
 .info-item {
   display: flex;
@@ -270,7 +318,7 @@ p.credit {
 .info-item-img {
   max-width: 35%;
   height: auto;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 .info-item-img img {
   width: 100%;
@@ -278,12 +326,11 @@ p.credit {
   border: 2px groove #DDD;
 }
 .info-item-text {
-  padding: 1.5rem 0;
   max-width: 55%;
   height: auto;
 }
 .info-item:first-child .info-item-img {
-  padding-top: 0;
+  padding-top: 2rem;
 }
 .info-item:last-child {
   background-color: #DDD;
@@ -294,6 +341,9 @@ p.credit {
 .info-item-text h4 {
   margin-bottom: 0.5rem;
 }
+.info-item-text p {
+  margin-bottom: 0.5px;
+}
 .info-item-text a {
   color: #5477D8;
   text-decoration: none;
@@ -302,21 +352,22 @@ p.credit {
 .info-item-text a:hover {
   color: #4663B3;
 }
-.courses {
-  background-color: #ddd;
-  padding: 2rem 0;
+
+
+/*==========================================================*/
+/*==================== Courses section =====================*/
+/*==========================================================*/
+#courses {
+  background-color: #EAEBEC;
   display: flex;
   flex-direction: column;
-  /*justify-content: center;*/
+  justify-content: center;
   align-items: center;
 }
-.courses h1 {
-  margin-bottom: 2rem;
-}
-.courses h4 {
+#courses h4 {
   margin-bottom: 0.5rem;
 }
-.courses p {
+#courses p {
   color: #888;
   font-weight: 100;
   font-size: 1.5rem;
@@ -336,8 +387,7 @@ p.credit {
   margin-bottom: 0;
 }
 .course-item {
-  max-width: 20%;
-  height: auto;
+  max-width: 30%;
   background-color: #FFF;
   margin-right: 2rem;
   border-radius: 5px;
@@ -358,4 +408,47 @@ p.credit {
 .course-desc {
   padding: 0 1rem;
   margin-bottom: 1.5rem;
+}
+
+.section-heading {
+  margin-bottom: 2rem auto;
+}
+/*==========================================================*/
+/*===================== Thesis section =====================*/
+/*==========================================================*/
+#exhibit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#exhibit video {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+}
+#exhibit .flex-col-media {
+  margin-right: 1rem;
+  align-items: flex-start;
+}
+.content {
+  max-width: 100%;
+  height: auto;
+  margin: 0 1.5rem;
+  display: flex;
+}
+#exhibit .info-item:first-child {
+  background-color: #DDD;
+  border: none;
+}
+#exhibit .info-item:first-child .info-item-img {
+  padding-top: 1rem;
+}
+#exhibit .info-item:first-child img {
+  border: none;
+}
+#exhibit .info-item:last-child {
+  background-color: #f3f5f5;
+  border: none;
 }
