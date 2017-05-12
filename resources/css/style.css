@@ -413,6 +413,8 @@ header a {
 .section-heading {
   margin-bottom: 2rem auto;
 }
+
+
 /*==========================================================*/
 /*===================== Thesis section =====================*/
 /*==========================================================*/
@@ -420,9 +422,10 @@ header a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-bottom: 2px double #DDD;
 }
 #exhibit video {
-  height: 100%;
+  height: auto;
   width: 100%;
   border-radius: 5px;
   object-fit: cover;
@@ -451,4 +454,25 @@ header a {
 #exhibit .info-item:last-child {
   background-color: #f3f5f5;
   border: none;
+}
+
+
+/*==========================================================*/
+/*===================== Footer section =====================*/
+/*==========================================================*/
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  color: #777;
+}
+footer ul li {
+  display: inline;
+}
+footer ul li:first-child {
+  margin-right: 1rem;
+}
+footer a {
+  text-decoration: none;
+  color: #777;
 }
