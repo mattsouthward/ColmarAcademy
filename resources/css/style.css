@@ -196,7 +196,11 @@ section {
 .round-corners {
   border-radius: 5px;
 }
-
+@media screen and (min-width: 768px) {
+  header .mobile {
+    display: none;
+  }
+}
 
 /*==========================================================*/
 /*===================== Header section =====================*/
@@ -205,10 +209,14 @@ header {
   max-width: 100%;
   height: 4rem;
   display: flex;
+  /*align-items: center;*/
+  padding: 0 1.5rem;
+}
+header .desktop {
+  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
-  padding: 0 1.5rem;
+  width: 100%;
 }
 header .logo {
   display: flex;
@@ -475,4 +483,31 @@ footer ul li:first-child {
 footer a {
   text-decoration: none;
   color: #777;
+}
+
+
+/*==========================================================*/
+/*===================== Mobile Sytles ======================*/
+/*==========================================================*/
+@media screen and (max-width: 768px) {
+  main {
+    width: 700px;
+    margin: auto;
+  }
+  header .desktop {
+    display: none;
+  }
+  header {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  header .mobile {
+    width: 768px;
+  }
+  .mobile ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
