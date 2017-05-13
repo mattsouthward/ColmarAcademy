@@ -26,7 +26,30 @@
   src: local('Merriweather Sans ExtraBold'), local('MerriweatherSans-ExtraBold'), url(https://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88Gowe_I-sQXwGXzt6b5C3t1Rn73rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+/* latin */
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v13/lEjOv129Q3iN1tuqWOeRBgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
 
 html {
   font-size: 16px;
@@ -84,6 +107,9 @@ a {
 .item-text {
   padding-left: 1rem;
 }
+.desktop {
+  display: none;
+}
 header {
   height: 4rem;
   border-bottom: 1px solid #ddd;
@@ -96,8 +122,24 @@ header {
   z-index: 10;
   background-color: white;
 }
-header img {
-  margin-left: 1.5rem;
+#logo {
+  display: flex;
+  align-items: center;
+  margin: 0 1.5rem;
+}
+#logo a:last-child {
+  display: none;
+}
+header a {
+  font-family: 'Lato'
+}
+header h4 {
+  font-weight: 900;
+  color: #4A4A4A;
+}
+header span {
+  font-weight: 400;
+  color: #999;
 }
 header nav {
   margin-right: 1.5rem;
@@ -106,15 +148,18 @@ nav ul li {
   display: inline;
   margin-right: 1.5rem;
 }
+nav li span {
+  color: #4A4A4A;
+  font-weight: 700;
+}
 nav ul li:last-child {
   margin-right: 0;
 }
-#banner {
-  /*width: 100%;*/
+.banner-img {
   height: 11.25rem;
-  padding-top: 4rem;
+  margin: 2rem -1rem;
 }
-#banner img {
+.banner-img img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -175,4 +220,34 @@ footer {
 footer i {
   margin-right: 1rem;
   color: #888;
+}
+
+
+@media only screen and (min-width: 768px) {
+  .desktop {
+    display: inline;
+  }
+  .container-lg-pad {
+    padding: 2rem 1.5rem;
+  }
+  #logo a:last-child {
+    display: inline;
+  }
+  nav ul li:nth-child(4n+0) {
+    display: inline;
+  }
+  nav ul li img {
+    display: none;
+  }
+  #banner {
+    display: flex;
+    padding-top: 6rem;
+  }
+  .banner-img {
+    max-width: 60%;
+    height: auto;
+    margin: 0 2.5rem 0 0;
+    object-fit: none;
+    object-position: 50% 50%;
+  }
 }
