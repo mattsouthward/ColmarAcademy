@@ -1,513 +1,444 @@
-/* Fonts */
-/* latin-ext */
+/*Fonts
+  Lato used for header and #quote
+  Merriweather Sans used for p, h1-h4, and footer
+*/
 @font-face {
-  font-family: 'Roboto';
+  font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Pru33qjShpZSmG3z6VYwnYX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Roboto Light'), local('Roboto-Light'), url(https://fonts.gstatic.com/s/roboto/v16/Hgo13k-tfSpn0qi1SFdUfZBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Merriweather Sans Light'), local('MerriweatherSans-Light'), url(https://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowT7BGRFJFGTOR8TgDVnPoH33rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* latin-ext */
 @font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/oOeFwZNlrTefzLYmlVV1UIX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  src: local('Roboto Medium'), local('Roboto-Medium'), url(https://fonts.gstatic.com/s/roboto/v16/RxZJdnzeo3R5zSexge8UUZBw1xU1rKptJj_0jans920.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Catamaran Thin'), local('Catamaran-Thin'), url(https://fonts.gstatic.com/s/catamaran/v2/AsJXcel0VOprDS7k9OVAc6E8kM4xWR1_1bYURRojRGc.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 100;
-  src: local('Catamaran Thin'), local('Catamaran-Thin'), url(https://fonts.gstatic.com/s/catamaran/v2/AsJXcel0VOprDS7k9OVAc4gp9Q8gbYrhqGlRav_IXfk.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Catamaran ExtraLight'), local('Catamaran-ExtraLight'), url(https://fonts.gstatic.com/s/catamaran/v2/hFc-HKSsGk6M-psujei1MIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 200;
-  src: local('Catamaran ExtraLight'), local('Catamaran-ExtraLight'), url(https://fonts.gstatic.com/s/catamaran/v2/hFc-HKSsGk6M-psujei1MBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Catamaran Light'), local('Catamaran-Light'), url(https://fonts.gstatic.com/s/catamaran/v2/Aaag4ccR7Oh_4eai-jbrYIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Catamaran Light'), local('Catamaran-Light'), url(https://fonts.gstatic.com/s/catamaran/v2/Aaag4ccR7Oh_4eai-jbrYBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Catamaran';
+  font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 400;
-  src: local('Catamaran'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v2/t_-OVtQ5f4U5rdYNmrStg4X0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Catamaran'), local('Catamaran-Regular'), url(https://fonts.gstatic.com/s/catamaran/v2/iVYgK2bOLvZcSxr0ITOecpBw1xU1rKptJj_0jans920.woff2) format('woff2');
+  src: local('Merriweather Sans'), local('MerriweatherSans-Regular'), url(https://fonts.gstatic.com/s/merriweathersans/v8/AKu1CjQ4qnV8MUltkAX3sMzpYVnxV7fe3GzmF357o4o.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* latin-ext */
 @font-face {
-  font-family: 'Catamaran';
+  font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 700;
-  src: local('Catamaran Bold'), local('Catamaran-Bold'), url(https://fonts.gstatic.com/s/catamaran/v2/PpgVtUHUdnBZYNpnzGbSc4joYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+  src: local('Merriweather Sans Bold'), local('MerriweatherSans-Bold'), url(https://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88GowSMwD46KpV4ZaXo4aI1TkGT3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* latin */
 @font-face {
-  font-family: 'Catamaran';
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 800;
+  src: local('Merriweather Sans ExtraBold'), local('MerriweatherSans-ExtraBold'), url(https://fonts.gstatic.com/s/merriweathersans/v8/6LmGj5dOJopQKEkt88Gowe_I-sQXwGXzt6b5C3t1Rn73rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v13/22JRxvfANxSmnAhzbFH8PgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+@font-face {
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
-  src: local('Catamaran Bold'), local('Catamaran-Bold'), url(https://fonts.gstatic.com/s/catamaran/v2/PpgVtUHUdnBZYNpnzGbScxampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v13/MgNNr5y1C_tIEuLEmicLmwLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
-/* latin-ext */
 @font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Catamaran ExtraBold'), local('Catamaran-ExtraBold'), url(https://fonts.gstatic.com/s/catamaran/v2/6VjB_uSfn3DZ93IQv58CmIjoYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 800;
-  src: local('Catamaran ExtraBold'), local('Catamaran-ExtraBold'), url(https://fonts.gstatic.com/s/catamaran/v2/6VjB_uSfn3DZ93IQv58CmBampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
-}
-/* latin-ext */
-@font-face {
-  font-family: 'Catamaran';
+  font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
-  src: local('Catamaran Black'), local('Catamaran-Black'), url(https://fonts.gstatic.com/s/catamaran/v2/5ys9TqpQc9Q6gHqbSox6p4joYw3YTyktCCer_ilOlhE.woff2) format('woff2');
-  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
-}
-/* latin */
-@font-face {
-  font-family: 'Catamaran';
-  font-style: normal;
-  font-weight: 900;
-  src: local('Catamaran Black'), local('Catamaran-Black'), url(https://fonts.gstatic.com/s/catamaran/v2/5ys9TqpQc9Q6gHqbSox6pxampu5_7CjHW5spxoeN3Vs.woff2) format('woff2');
+  src: local('Lato Black'), local('Lato-Black'), url(https://fonts.gstatic.com/s/lato/v13/lEjOv129Q3iN1tuqWOeRBgLUuEpTyoUstqEm5AMlJo4.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
 }
 
-
-/*==========================================================*/
-/*==================== Universal section ===================*/
-/*==========================================================*/
+/*Univeral stuff (mostly) */
 html {
   font-size: 16px;
 }
 body {
-  font-family: "Catamaran";
+  font-family: 'Merriweather Sans'
 }
 main {
-  width: 1178px;
+  width: 100%;
   margin: auto;
 }
 h1 {
-  font-size: 3rem;
-  font-weight: 900;
-  margin-bottom: 1.5rem;
-  color: #4A4A4A;
-}
-h4 {
+  color: #555;
   font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.25;
   margin-bottom: 2rem;
-  color: #4A4A4A;
 }
-img {
-  border-radius: 5px;
-  max-width: 100%;
+h3 {
+  color: #555;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin-bottom: 1rem;
 }
 p {
-  color: #777;
-  font-weight: 100;
-  font-size: 1.25rem;
-  line-height: 1.65rem;
+  margin-bottom: 1rem;
+  color: #888;
 }
-section {
-  padding: 2rem 0;
-  max-width: 100%;
-  display: flex;
-  margin: auto;
+a {
+  text-decoration: none;
 }
-.light-background {
+.container-lg-pad {
+  padding: 2rem 1rem;
+}
+.background-grey-1 {
+  background-color: #999;
+}
+.background-grey-2 {
+  background-color: #DBDBDB;
+}
+.background-grey-3 {
   background-color: #F3F5F5;
 }
-.flex-col-media {
-  max-width: 60%;
-  display: flex;
-  flex-direction: column;
+.background-grey-4 {
+  background-color: #F5F4F5;
 }
-.round-corners {
-  border-radius: 5px;
-}
-@media screen and (min-width: 768px) {
-  header .mobile {
-    display: none;
-  }
-}
-
-/*==========================================================*/
-/*===================== Header section =====================*/
-/*==========================================================*/
-header {
-  max-width: 100%;
-  height: 4rem;
-  display: flex;
-  /*align-items: center;*/
-  padding: 0 1.5rem;
-}
-header .desktop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.item-container {
   width: 100%;
+  margin-bottom: 1rem;
 }
-header .logo {
+.item-img {
+  margin-bottom: 1rem;
+}
+.item-text {
+  padding-left: 1rem;
+}
+.desktop {
+  display: none;
+}
+
+/* Header with logo text hidden in mobile view
+   and navigational icons when in mobile */
+header {
+  font-family: 'Lato';
+  height: 4rem;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4rem;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  background-color: white;
+}
+#logo {
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
+  margin: 0 1.5rem;
 }
-.logo img {
-  height: 80%;
+#logo a:last-child {
+  display: none;
 }
-.logo h3 {
-  color: #505050;
+header h4 {
   font-weight: 900;
+  color: #4A4A4A;
 }
-.logo span {
-  color: #ddd;
+header span {
   font-weight: 400;
+  color: #999;
 }
-header ul li {
+header nav {
+  margin-right: 1.5rem;
+}
+nav ul li {
   display: inline;
+  margin-right: 1.5rem;
 }
-header ul li:not(:last-child) {
-  margin-right: 1rem;
+nav li span {
+  color: #4A4A4A;
+  font-weight: 700;
 }
-header a {
-  text-decoration: none;
-  color: #505050;
+nav ul li:last-child {
+  margin-right: 0;
 }
 
-
-/*==========================================================*/
-/*=================== Top banner section ===================*/
-/*==========================================================*/
-#banner {
-  background-color: #D8D8D8;
-  padding: 0;
-}
-#banner .flex-col-media {
-  margin: 2rem 2.5rem 2rem 1.5rem;
-}
+/* Top banner section, offset from top to accomodate
+   for the fixed header */
 .banner-img {
-  max-width: 60%;
-  height: auto;
-  margin-right: 2.5rem;
+  height: 11.25rem;
+  margin: 2rem -1rem;
 }
 .banner-img img {
-  max-width: 100%;
-  height: auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% -0%;
 }
-.headline {
-  max-width: 30%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: 2rem 1.5rem 2rem 0;
+.container-lg-pad > h3 {
+  margin-bottom: 1.5rem;
 }
-.button a {
+#button a {
   display: block;
   background-color: #4A4A4A;
   padding: 1.5rem;
   font-size: 1.5rem;
   text-align: center;
-  text-decoration: none;
   color: #FDFDFD;
+  border-radius: 5px;
 }
-.button a:hover {
+#button a:active {
   background-color: #000;
 }
 
-
-/*==========================================================*/
-/*====================== Info section ======================*/
-/*==========================================================*/
+/* Info section */
 #info {
-  padding: 0;
-}
-#info .flex-col-media {
-  padding: 2rem 1.5rem;
-  border-right: 2px solid #DDD;
-}
-#info h1 {
-  margin-top: 2rem;
-}
-/*#info p {
-  color: #777;
-  font-weight: 100;
-  font-size: 1.25rem;
-  line-height: 1.65rem;
-}*/
-#info #credit {
-  color: #333;
-  font-family: "Roboto";
-  font-size: 0.99rem;
-  margin-bottom: 0;
-  margin-top: 1rem;
-}
-.info-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 423px;
-}
-.info-item {
-  display: flex;
-  align-items: center;
-  border-bottom: 2px double #DDD;
-}
-.info-item-img {
-  max-width: 35%;
-  height: auto;
-  padding: 1rem;
-}
-.info-item-img img {
-  width: 100%;
-  height: auto;
-  border: 2px groove #DDD;
-}
-.info-item-text {
-  max-width: 55%;
-  height: auto;
-}
-.info-item:first-child .info-item-img {
-  padding-top: 2rem;
-}
-.info-item:last-child {
-  background-color: #DDD;
-}
-.info-item:last-child img {
-  border: none;
-}
-.info-item-text h4 {
-  margin-bottom: 0.5rem;
-}
-.info-item-text p {
-  margin-bottom: 0.5px;
-}
-.info-item-text a {
-  color: #5477D8;
-  text-decoration: none;
-  font-size: 1.5rem;
-}
-.info-item-text a:hover {
-  color: #4663B3;
-}
-
-
-/*==========================================================*/
-/*==================== Courses section =====================*/
-/*==========================================================*/
-#courses {
-  background-color: #EAEBEC;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-#courses h4 {
-  margin-bottom: 0.5rem;
-}
-#courses p {
-  color: #888;
-  font-weight: 100;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  margin-bottom: 0.5rem;
-}
-.course-items-gallery {
-  display: flex;
-  flex-direction: column;
-}
-.course-items-row {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 1.5rem;
-}
-.course-items-row:last-child {
-  margin-bottom: 0;
-}
-.course-item {
-  max-width: 30%;
-  background-color: #FFF;
-  margin-right: 2rem;
-  border-radius: 5px;
-}
-.course-item:last-child {
-  margin-right: 0;
-}
-.course-img {
-  width: 100%;
-  margin-bottom: 1rem;
-}
-.course-img img {
-  width: 100%;
-  height: 13.75rem;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 0px;
-}
-.course-desc {
-  padding: 0 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.section-heading {
-  margin-bottom: 2rem auto;
-}
-
-
-/*==========================================================*/
-/*===================== Thesis section =====================*/
-/*==========================================================*/
-#exhibit {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 2px double #DDD;
-}
-#exhibit video {
-  height: auto;
-  width: 100%;
-  border-radius: 5px;
-  object-fit: cover;
-  margin-bottom: 1.5rem;
-}
-#exhibit .flex-col-media {
-  margin-right: 1rem;
-  align-items: flex-start;
-}
-.content {
-  max-width: 100%;
-  height: auto;
-  margin: 0 1.5rem;
-  display: flex;
-}
-#exhibit .info-item:first-child {
-  background-color: #DDD;
-  border: none;
-}
-#exhibit .info-item:first-child .info-item-img {
   padding-top: 1rem;
 }
-#exhibit .info-item:first-child img {
-  border: none;
+.item-img img {
+  max-width: 100%;
+  border-radius: 5px;
 }
-#exhibit .info-item:last-child {
-  background-color: #f3f5f5;
-  border: none;
+.item-text a {
+  color: #5888B9;
 }
 
+/* Courses section */
+#courses {
+  border: 2px solid #E8E9E9;
+}
+#courses .mobile h3 {
+  text-align: center;
+  padding: 1rem;
+  background-color: #DBDBDB;
+  margin-bottom: 0.5rem;
+  border-radius: 5px;
+}
+#thesis {
+  padding: 2rem 0 1.5rem 0;
+  text-align: center;
+  border-bottom: 2px solid #E8E9E9;
+}
 
-/*==========================================================*/
-/*===================== Footer section =====================*/
-/*==========================================================*/
+/* Thesis section */
+#thesis video {
+  width: 100%;
+  object-fit: contain;
+  border: 2px solid #E8E9E9;
+}
 footer {
   display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
-  color: #777;
+  padding: 1rem;
 }
-footer ul li {
-  display: inline;
+.copyright {
+  display: flex;
 }
-footer ul li:first-child {
+.copyright i {
   margin-right: 1rem;
-}
-footer a {
-  text-decoration: none;
-  color: #777;
+  color: #888;
 }
 
-
-/*==========================================================*/
-/*===================== Mobile Sytles ======================*/
-/*==========================================================*/
-@media screen and (max-width: 768px) {
-  main {
-    width: 700px;
-    margin: auto;
+/* Desktop display styles */
+@media only screen and (min-width: 768px) {
+  /*Universal desktop style */
+  img {
+    border-radius: 5px;
   }
-  header .desktop {
+  .desktop {
+    display: inline;
+  }
+  .mobile {
     display: none;
   }
-  header {
-    max-width: 100%;
+  .container-lg-pad {
+    padding: 2rem 1.5rem;
+  }
+  .banner-img {
+    max-width: 60%;
+    height: auto;
+    margin: 0 2.5rem 0 0;
+  }
+  /* Header section */
+  #logo a:last-child {
+    display: inline;
+  }
+  nav ul li:nth-child(4n+0) {
+    display: inline;
+  }
+  nav ul li img {
+    display: none;
+  }
+  /* Banner section */
+  #banner {
+    display: flex;
+    padding-top: 6rem;
+  }
+  /* info section */
+  #info {
+    display: flex;
+    padding-top:
+  }
+  #info .banner-img {
+    margin: 1rem 1.5rem 0 0;
+  }
+  .info-left-img {
+    margin-bottom: 2rem;
+  }
+  .info-left-text h1 {
+    margin-bottom: 1.5rem;
+  }
+  .info-left-text p {
+    line-height: 1.35;
+  }
+  .quote {
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+  .items {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid #DBDBDB;
+    margin: -1rem 0 -2rem 0;
+    max-width: 423px;
+  }
+  .item-container {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid #DBDBDB;
+    margin: 0;
   }
-  header .mobile {
-    width: 768px;
+  .item-container:first-child {
+    margin-top: 1rem;
   }
-  .mobile ul {
+  .item-container:last-child {
+    background-color: #DBDBDB;
+  }
+  .item-img {
+    max-width: 35%;
+    height: auto;
+    padding: 1rem;
+    margin: 0;
+  }
+  .item-img img:first-child{
+    display: none;
+  }
+  .item-img img {
+    object-fit: contain;
+  }
+  .item-text {
+    max-width: 50%;
+  }
+  .item-text h3,
+  .item-text p,
+  .item-text a {
+    margin: 0.5rem 0;
+  }
+  /* Courses section */
+  #courses {
+    background-color: #EAEBEC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #courses p {
+    color: #888;
+    font-weight: 100;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .course-items-gallery {
+    display: flex;
+    flex-direction: column;
+  }
+  .course-items-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+  }
+  .course-items-row:last-child {
+    margin-bottom: 0;
+  }
+  .course-item {
+    max-width: 30%;
+    background-color: #FFF;
+    margin-right: 2rem;
+    border-radius: 5px;
+  }
+  .course-item:last-child {
+    margin-right: 0;
+  }
+  .course-img {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .course-img img {
+    width: 100%;
+    height: 13.75rem;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+  .course-desc {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+  }
+  #courses h3 {
+    padding: 0;
+    margin-bottom: 0.5rem;
+    background-color: white;
+  }
+  .section-heading {
+    margin-bottom: 2rem auto;
+  }
+  /* Thesis section */
+  #thesis {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0 2rem 1.5rem;
+    text-align: left;
+  }
+  #thesis h1 {
+    text-align: center;
+  }
+  .inner-container {
+    display: flex;
+  }
+  .thesis-left {
+    max-width: 60%;
+    height: auto;
+    margin: 0 1.5rem 0 0;
+  }
+  #thesis .info-left-img {
+    margin-bottom: 1.5rem;
+  }
+  #thesis .banner-img {
+    margin-right: 1rem;
+  }
+  #thesis .items {
+    border: none;
+  }
+  #thesis .item-container {
+    border: none;
+  }
+  #thesis img:first-child {
+    display: block;
+  }
+  #thesis .item-container:first-child {
+    background-color: #DBDBDB;
+  }
+  #thesis .item-container:last-child {
+    background-color: transparent;
+  }
+  /* Footer section */
+  footer {
+    font-size: 0.75rem;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    padding: 1.5rem;
+  }
+  .footer-links li {
+    display: inline;
+  }
+  .footer-links a {
+    color: #888;
+  }
+  .footer-links li:first-child {
+    margin-right: 1rem;
   }
 }
