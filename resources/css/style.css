@@ -257,6 +257,11 @@ footer {
     height: auto;
     margin: 0 2.5rem 0 0;
   }
+  #banner .banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
   /* Header section */
   #logo a:last-child {
     display: inline;
