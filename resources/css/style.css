@@ -354,6 +354,7 @@ footer {
   .course-items-gallery {
     display: flex;
     flex-direction: column;
+    max-width: 950px;
   }
   .course-items-row {
     display: flex;
